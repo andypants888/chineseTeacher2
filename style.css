@@ -1,0 +1,288 @@
+/* "global" background settings */
+html {
+    background-image: url(great_wall_night.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+body {
+    padding:0;
+    margin:0;
+    line-height: 1.6;
+    height: 100vh;
+}
+
+/* Start of items inside smooth scroll */
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar ul {
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    /* text-align: center; */
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+    height: 4rem;
+    background:rgba(0, 0, 0, 0.7)
+
+}
+
+
+.landing-nav-links li {
+    display: flex;
+    justify-content: center;
+    color: white;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+
+}
+
+.landing-nav-links li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.918)
+    
+}
+
+#home {
+    width: 100%;
+    height: 100vh;
+}
+
+#about {
+    width: 100%;
+    height: 85vh;
+}
+
+#services {
+    width: 100%;
+    height: 85vh;
+}
+
+#contact {
+    width: 100%;
+    height: 100vh;
+}
+
+/* HOME CSS, CONTENT, BG, FX*/
+
+.frost-container {
+    /* pointer-events: none; */
+}
+
+.frosted-glass-bg {
+    height: 30rem;
+    width: 80vw;
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.frosted-glass-bg::before {
+    content: " ";
+    background-image: url(great_wall_night.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    position: absolute;
+    left: -25px;
+    right: -25px;
+    top: -25px;
+    bottom: -25px;
+    box-shadow: inset 0 0 0 300rem rgba(255,255,255, .05);
+    filter: blur(5px);
+}
+
+.frosted-glass-bg h1 {
+    position: relative;
+    color: white;
+    margin: 1rem;
+}
+
+.frosted-glass-bg p {
+    position: relative;
+    color: white;
+    margin: 1rem;
+
+}
+
+.profile-pic {
+    position: relative;
+    width: 60%;
+    margin: 0vw;
+    left: 20%;
+    top: 5%;
+    border-radius: 50%;
+}
+
+/* About Me CSS BG, IMG, TExt */
+
+
+.frosted-glass-bg2 {
+    height: 32rem;
+    width: 80vw;
+    position: absolute;
+    left: 10%;
+    top: 130%;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.frosted-glass-bg2::before {
+    content: " ";
+    background-image: url(great_wall_night.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    position: absolute;
+    left: -25px;
+    right: -25px;
+    top: -25px;
+    bottom: -25px;
+    box-shadow: inset 0 0 0 300rem rgba(255,255,255, .05);
+    filter: blur(5px);
+}
+
+.frosted-glass-bg2 h1 {
+    position: relative;
+    color: white;
+    margin: 1rem;
+}
+
+.frosted-glass-bg2 p {
+    position: relative;
+    color: white;
+    margin: 1rem;
+
+}
+
+.logo {
+    position: relative;
+    width: 25%;
+    float: none;
+    display: inline-flex;
+    margin: -4vw 1vw 1vw 1vw;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+/* Services BG & Frost effect */
+.frosted-glass-bg3 {
+    height: 20rem;
+    width: 80vw;
+    position: absolute;
+    left: 10%;
+    top: 230%;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.frosted-glass-bg3::before {
+    content: " ";
+    background-image: url(great_wall_night.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    position: absolute;
+    left: -25px;
+    right: -25px;
+    top: -25px;
+    bottom: -25px;
+    box-shadow: inset 0 0 0 300rem rgba(255,255,255, .05);
+    filter: blur(5px);
+}
+
+.frosted-glass-bg3 h1 {
+    position: relative;
+    color: white;
+    margin: 1rem;
+}
+
+.frosted-glass-bg3 h3 {
+    position: relative;
+    color: white;
+    margin: 1rem;
+}
+
+.frosted-glass-bg3 ul {
+    position: relative;
+    color: white;
+    margin: 1rem;
+}
+/* Contact BG & Frost effect */
+
+.frosted-glass-bg4 {
+    height: 15rem;
+    width: 80vw;
+    position: absolute;
+    left: 10%;
+    top: 330%;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.frosted-glass-bg4::before {
+    content: " ";
+    background-image: url(great_wall_night.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    position: absolute;
+    left: -25px;
+    right: -25px;
+    top: -25px;
+    bottom: -25px;
+    box-shadow: inset 0 0 0 300rem rgba(255,255,255, .05);
+    filter: blur(5px);
+}
+
+.frosted-glass-bg4 h1 {
+    position: relative;
+    color: white;
+    margin: 1rem;
+}
+
+.frosted-glass-bg4 ul {
+    position: relative;
+    color: white;
+    margin: 1rem;
+}
+
+
+/* Footer CSS */
+
+.footer {
+    position: fixed;
+    bottom: 0vw;
+    /*background: #333333;*/
+    color: #ffffff;
+    width: 100%;
+    text-align:center;
+    font-size: 4vw;
+    opacity: .5;
+    z-index: -1;
+}
