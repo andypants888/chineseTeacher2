@@ -1,6 +1,6 @@
 /* "global" background settings */
-html {
-    background-image: url(great_wall_night.jpg); 
+/* html {
+    background-image: url(guangxi.jpg); 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: center;
@@ -9,14 +9,29 @@ html {
     width: 100%;
     height: 100%;
 
+} */
+html::before {
+    content: "";
+    display: block;
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url(guangxi.jpg); no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-
 body {
     padding:0;
     margin:0;
     line-height: 1.6;
     height: 100vh;
 }
+
 
 /* Start of items inside smooth scroll */
 
@@ -96,7 +111,7 @@ body {
 
 .frosted-glass-bg::before {
     content: " ";
-    background-image: url(great_wall_night.jpg); 
+    background-image: url(guangxi.jpg); 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: center;
@@ -107,8 +122,8 @@ body {
     right: -25px;
     top: -25px;
     bottom: -25px;
-    box-shadow: inset 0 0 0 300rem rgba(255,255,255, .05);
-    filter: blur(5px);
+    box-shadow: inset 0 0 0 300rem rgba(0, 0, 0, 0.2);
+    filter: blur(10px);
 }
 
 .frosted-glass-bg h1 {
@@ -148,7 +163,7 @@ body {
 
 .frosted-glass-bg2::before {
     content: " ";
-    background-image: url(great_wall_night.jpg); 
+    background-image: url(guangxi.jpg); 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: center;
@@ -159,8 +174,8 @@ body {
     right: -25px;
     top: -25px;
     bottom: -25px;
-    box-shadow: inset 0 0 0 300rem rgba(255,255,255, .05);
-    filter: blur(5px);
+    box-shadow: inset 0 0 0 300rem rgba(0, 0, 0, 0.2);
+    filter: blur(10px);
 }
 
 .frosted-glass-bg2 h1 {
@@ -199,7 +214,7 @@ body {
 
 .frosted-glass-bg3::before {
     content: " ";
-    background-image: url(great_wall_night.jpg); 
+    background-image: url(guangxi.jpg); 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: center;
@@ -210,8 +225,8 @@ body {
     right: -25px;
     top: -25px;
     bottom: -25px;
-    box-shadow: inset 0 0 0 300rem rgba(255,255,255, .05);
-    filter: blur(5px);
+    box-shadow: inset 0 0 0 300rem rgba(0, 0, 0, 0.2);
+    filter: blur(10px);
 }
 
 .frosted-glass-bg3 h1 {
@@ -245,7 +260,7 @@ body {
 
 .frosted-glass-bg4::before {
     content: " ";
-    background-image: url(great_wall_night.jpg); 
+    background-image: url(guangxi.jpg); 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: center;
@@ -256,8 +271,8 @@ body {
     right: -25px;
     top: -25px;
     bottom: -25px;
-    box-shadow: inset 0 0 0 300rem rgba(255,255,255, .05);
-    filter: blur(5px);
+    box-shadow: inset 0 0 0 300rem rgba(0, 0, 0, 0.2);
+    filter: blur(10px);
 }
 
 .frosted-glass-bg4 h1 {
@@ -271,6 +286,10 @@ body {
     color: white;
     margin: 1rem;
 }
+.frosted-glass-bg4 ul a {
+    text-decoration: none;
+    color: white;
+}
 
 
 /* Footer CSS */
@@ -278,11 +297,12 @@ body {
 .footer {
     position: fixed;
     bottom: 0vw;
+    left: 10%;
     /*background: #333333;*/
     color: #ffffff;
     width: 100%;
-    text-align:center;
+    text-align:left;
     font-size: 4vw;
-    opacity: .5;
+    opacity: .8;
     z-index: -1;
 }
