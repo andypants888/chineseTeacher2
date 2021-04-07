@@ -20,6 +20,7 @@ html::before {
     height: 100%;
     z-index: -10;
     background: url(guangxi.jpg); no-repeat center center;
+    
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -28,8 +29,11 @@ html::before {
 body {
     padding:0;
     margin:0;
-    line-height: 1.6;
+    line-height: 1.4;
     height: 100vh;
+    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 1.6em
 }
 
 
@@ -100,7 +104,7 @@ body {
 }
 
 .frosted-glass-bg {
-    height: 30rem;
+    height: 35rem;
     width: 80vw;
     position: absolute;
     left: 10%;
@@ -114,8 +118,8 @@ body {
     background-image: url(guangxi.jpg); 
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position-x: center;
-    background-position-y: center;
+    background-position-x: inherit;
+    background-position-y: inherit;
     background-size: cover;
     position: absolute;
     left: -25px;
@@ -130,6 +134,8 @@ body {
     position: relative;
     color: white;
     margin: 1rem;
+    font-family: 'Nanum Myeongjo', serif;
+
 }
 
 .frosted-glass-bg p {
@@ -144,7 +150,7 @@ body {
     width: 60%;
     margin: 0vw;
     left: 20%;
-    top: 5%;
+    top: 0%;
     border-radius: 50%;
 }
 
@@ -152,7 +158,7 @@ body {
 
 
 .frosted-glass-bg2 {
-    height: 32rem;
+    height: 42rem;
     width: 80vw;
     position: absolute;
     left: 10%;
@@ -166,8 +172,8 @@ body {
     background-image: url(guangxi.jpg); 
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position-x: center;
-    background-position-y: center;
+    background-position-x: inherit;
+    background-position-y: inherit;
     background-size: cover;
     position: absolute;
     left: -25px;
@@ -182,6 +188,7 @@ body {
     position: relative;
     color: white;
     margin: 1rem;
+    font-family: 'Nanum Myeongjo', serif;
 }
 
 .frosted-glass-bg2 p {
@@ -203,7 +210,7 @@ body {
 
 /* Services BG & Frost effect */
 .frosted-glass-bg3 {
-    height: 20rem;
+    height: 27rem;
     width: 80vw;
     position: absolute;
     left: 10%;
@@ -217,8 +224,8 @@ body {
     background-image: url(guangxi.jpg); 
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position-x: center;
-    background-position-y: center;
+    background-position-x: inherit;
+    background-position-y: inherit;
     background-size: cover;
     position: absolute;
     left: -25px;
@@ -233,6 +240,7 @@ body {
     position: relative;
     color: white;
     margin: 1rem;
+    font-family: 'Nanum Myeongjo', serif;
 }
 
 .frosted-glass-bg3 h3 {
@@ -249,7 +257,7 @@ body {
 /* Contact BG & Frost effect */
 
 .frosted-glass-bg4 {
-    height: 15rem;
+    height: 20rem;
     width: 80vw;
     position: absolute;
     left: 10%;
@@ -263,8 +271,8 @@ body {
     background-image: url(guangxi.jpg); 
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position-x: center;
-    background-position-y: center;
+    background-position-x: inherit;
+    background-position-y: inherit;
     background-size: cover;
     position: absolute;
     left: -25px;
@@ -279,6 +287,7 @@ body {
     position: relative;
     color: white;
     margin: 1rem;
+    font-family: 'Nanum Myeongjo', serif;
 }
 
 .frosted-glass-bg4 ul {
@@ -302,7 +311,88 @@ body {
     color: #ffffff;
     width: 100%;
     text-align:left;
-    font-size: 4vw;
+    font-size: 1.6rem;
     opacity: .8;
     z-index: -1;
+}
+
+/* tablet sized */
+
+@media (min-width: 768px) {
+    .profile-pic {
+        position: relative;
+        width: 35%;
+        height: 60%;
+        margin: 0vw;
+        border-radius: 10%;
+        object-fit: cover;
+    }
+
+    #home {
+        width: 100%;
+        height: 120vh;
+    }
+    
+    #about {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    #services {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    #contact {
+        width: 100%;
+        height: 100vh;
+    }
+
+}
+
+@media (min-width: 1025px) {
+    body {
+        padding:0;
+        margin:0;
+        line-height: 1.2;
+        font-size: 2em
+    }
+
+    #home {
+        width: 100%;
+        height: 120vh;
+    }
+    
+    #about {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    #services {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    #contact {
+        width: 100%;
+        height: 100vh;
+    }
+
+
+    .welcome-container {
+        width:50%;
+    }
+
+    .profile-pic {
+        position: absolute;
+        width: 35%;
+        height: 90%;
+        margin: 0vw;
+        left: 60%;
+        top: 5%;
+        border-radius: 10%;
+        object-fit: cover;
+    }
+    
+    
 }
