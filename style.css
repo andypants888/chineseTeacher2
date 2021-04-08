@@ -1,15 +1,7 @@
-/* "global" background settings */
-/* html {
-    background-image: url(guangxi.jpg); 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position-x: center;
-    background-position-y: center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
+/* "global" settings */
 
-} */
+/* Originally, html { background-attachment: fixed} was used. iOS did not support this feature, html::before fixed this for iOS" */
+
 html::before {
     content: "";
     display: block;
@@ -26,6 +18,7 @@ html::before {
     -o-background-size: cover;
     background-size: cover;
 }
+
 body {
     padding:0;
     margin:0;
@@ -36,8 +29,7 @@ body {
     font-size: 1.6em
 }
 
-
-/* Start of items inside smooth scroll */
+/* navbar elements */
 
 .container {
     width: 100%;
@@ -55,9 +47,7 @@ body {
     width: 100%;
     height: 4rem;
     background:rgba(0, 0, 0, 0.7)
-
 }
-
 
 .landing-nav-links li {
     display: flex;
@@ -67,16 +57,15 @@ body {
     width: 100%;
     margin: 0;
     padding: 1rem;
-
 }
 
 .landing-nav-links li a {
     text-decoration: none;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.918)
-    
 }
 
+/* Required to adjust vh for mobile, for landing "nav-links" in correct viewport location */
 #home {
     width: 100%;
     height: 100vh;
@@ -97,12 +86,11 @@ body {
     height: 100vh;
 }
 
-/* HOME CSS, CONTENT, BG, FX*/
+/* HOME CONTENT CSS*/
 
-.frost-container {
-    /* pointer-events: none; */
-}
+/* DECISION: FLEXBOX Currently NOT COMPATIBLE with the frosted effect. Maybe due to position:absolute. */
 
+/* For "Window", cutoff blurred edge */
 .frosted-glass-bg {
     height: 35rem;
     width: 80vw;
@@ -113,6 +101,7 @@ body {
     border-radius: 2rem;
 }
 
+/* To create blurred background effect. Still bugged on iOS */
 .frosted-glass-bg::before {
     content: " ";
     background-image: url(guangxi.jpg); 
@@ -154,7 +143,7 @@ body {
     border-radius: 50%;
 }
 
-/* About Me CSS BG, IMG, TExt */
+/* ABOUT CONTENT CSS */
 
 
 .frosted-glass-bg2 {
@@ -208,7 +197,8 @@ body {
     z-index: 10;
 }
 
-/* Services BG & Frost effect */
+/* SERVICES CONTENT CSS*/
+
 .frosted-glass-bg3 {
     height: 27rem;
     width: 80vw;
@@ -254,7 +244,8 @@ body {
     color: white;
     margin: 1rem;
 }
-/* Contact BG & Frost effect */
+
+/* CONTACT CONTENT CSS */
 
 .frosted-glass-bg4 {
     height: 20rem;
@@ -300,8 +291,7 @@ body {
     color: white;
 }
 
-
-/* Footer CSS */
+/* FOOTER CSS */
 
 .footer {
     position: fixed;
@@ -316,8 +306,8 @@ body {
     z-index: -1;
 }
 
-/* tablet sized */
-
+/* MEDIA QUERIES */
+/* Tablet */
 @media (min-width: 768px) {
     .profile-pic {
         position: relative;
@@ -349,7 +339,7 @@ body {
     }
 
 }
-
+/* Desktop */
 @media (min-width: 1025px) {
     body {
         padding:0;
