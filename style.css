@@ -294,15 +294,6 @@ body {
 } */
 
 @media (min-width: 481px) {
-    .frosted-glass-bg p {
-        position: relative;
-        color: white;
-        margin: 0% 0% 0% 25%;
-    }
-
-    .frosted-glass-bg h1 {
-        margin: 0% 0% 0% 25%;
-    }
     
     .profile-pic {
         width: 25%;
