@@ -1,6 +1,6 @@
 /* "global" background settings */
 html {
-    background-image: url(great_wall_night.jpg); 
+    background-image: url(zhangjiajie.jpg); 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: center;
@@ -96,7 +96,7 @@ body {
 
 .frosted-glass-bg::before {
     content: " ";
-    background-image: url(great_wall_night.jpg); 
+    background-image: url(zhangjiajie.jpg); 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: center;
@@ -148,7 +148,7 @@ body {
 
 .frosted-glass-bg2::before {
     content: " ";
-    background-image: url(great_wall_night.jpg); 
+    background-image: url(zhangjiajie.jpg); 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: center;
@@ -199,7 +199,7 @@ body {
 
 .frosted-glass-bg3::before {
     content: " ";
-    background-image: url(great_wall_night.jpg); 
+    background-image: url(zhangjiajie.jpg); 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: center;
@@ -245,7 +245,7 @@ body {
 
 .frosted-glass-bg4::before {
     content: " ";
-    background-image: url(great_wall_night.jpg); 
+    background-image: url(zhangjiajie.jpg); 
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: center;
