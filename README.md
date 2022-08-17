@@ -1,5 +1,5 @@
-# chineseTeacher2
+# SD Chinese Teacher v2.0
 
-### site made for mom.
+### Site for local client. Updated visual appearance.
 
 #### [live site here](https://www.sdchineseteacher.com/)
